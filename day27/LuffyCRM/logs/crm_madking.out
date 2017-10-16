@@ -1,0 +1,217 @@
+System check identified some issues:
+
+WARNINGS:
+crm.Role.menus: (fields.W340) null has no effect on ManyToManyField.
+
+System check identified 1 issue (0 silenced).
+[26/Sep/2017 02:43:36] "GET /admin/ HTTP/1.1" 302 0
+[26/Sep/2017 02:43:36] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1655
+[26/Sep/2017 02:43:36] "GET /static/admin/css/login.css HTTP/1.1" 200 1203
+[26/Sep/2017 02:43:40] "POST /admin/login/?next=/admin/ HTTP/1.1" 200 1829
+[26/Sep/2017 03:01:39] "POST /admin/login/?next=/admin/ HTTP/1.1" 200 1828
+[26/Sep/2017 03:01:47] "POST /admin/login/?next=/admin/ HTTP/1.1" 200 1828
+[26/Sep/2017 03:01:58] "POST /admin/login/?next=/admin/ HTTP/1.1" 200 1829
+[26/Sep/2017 03:02:10] "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[26/Sep/2017 03:02:11] "GET /admin/ HTTP/1.1" 200 8619
+[26/Sep/2017 03:02:11] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[26/Sep/2017 03:02:11] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[26/Sep/2017 03:02:14] "GET /admin/crm/account/ HTTP/1.1" 200 7277
+[26/Sep/2017 03:02:15] "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 363
+[26/Sep/2017 03:02:15] "GET /static/admin/js/core.js HTTP/1.1" 200 7976
+[26/Sep/2017 03:02:15] "GET /static/admin/css/changelists.css HTTP/1.1" 200 6170
+[26/Sep/2017 03:02:15] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[26/Sep/2017 03:02:15] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 6591
+[26/Sep/2017 03:02:15] "GET /static/admin/js/actions.js HTTP/1.1" 200 6501
+[26/Sep/2017 03:02:15] "GET /static/admin/js/urlify.js HTTP/1.1" 200 8186
+[26/Sep/2017 03:02:15] "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1538
+[26/Sep/2017 03:02:15] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 128820
+[26/Sep/2017 03:02:15] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 258648
+[26/Sep/2017 03:02:15] "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+[26/Sep/2017 03:02:15] "GET /static/admin/img/icon-no.svg HTTP/1.1" 200 560
+[26/Sep/2017 03:02:15] "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+[26/Sep/2017 03:02:15] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+[26/Sep/2017 03:02:15] "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+[26/Sep/2017 03:02:17] "GET /admin/crm/account/7/change/ HTTP/1.1" 200 8860
+[26/Sep/2017 03:02:17] "GET /static/admin/css/forms.css HTTP/1.1" 200 8173
+[26/Sep/2017 03:02:17] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[26/Sep/2017 03:02:17] "GET /static/admin/css/widgets.css HTTP/1.1" 200 10340
+[26/Sep/2017 03:02:17] "GET /static/admin/js/change_form.js HTTP/1.1" 200 712
+[26/Sep/2017 03:02:17] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 495
+[26/Sep/2017 03:02:23] "POST /admin/crm/account/7/change/ HTTP/1.1" 302 0
+[26/Sep/2017 03:02:23] "GET /admin/crm/account/ HTTP/1.1" 200 7465
+[26/Sep/2017 03:02:23] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[26/Sep/2017 03:02:28] "GET /admin/crm/account/ HTTP/1.1" 200 7277
+[26/Sep/2017 03:02:32] "GET / HTTP/1.1" 200 8850
+[26/Sep/2017 03:02:35] "GET /crm/customer_list/ HTTP/1.1" 200 12370
+Not Found: /crm/need_followup
+[26/Sep/2017 03:02:36] "GET /crm/need_followup HTTP/1.1" 404 2955
+[26/Sep/2017 03:06:02] "GET /admin/crm/ HTTP/1.1" 200 7778
+[26/Sep/2017 03:06:28] "GET /crm/customer_list/22/change/ HTTP/1.1" 200 16303
+[26/Sep/2017 03:06:43] "GET /admin/crm/customer/ HTTP/1.1" 200 7915
+[26/Sep/2017 03:06:43] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+Performing system checks...
+
+------------crm luffyadmin.py
+------------teacher luffyadmin.py
+注册的admin list: {'crm': {'course': <crm.luffy_admin.CourseAdmin object at 0x7f8c2e3c6c18>, 'account': <luffyAdmin.admin_base.BaseAdmin object at 0x7f8c2e3c6c88>, 'customer': <crm.luffy_admin.CustomerAdmin object at 0x7f8c2e3c6be0>, 'classlist': <luffyAdmin.admin_base.BaseAdmin object at 0x7f8c2e3c6c50>}, 'teacher': {'teachertest': <luffyAdmin.admin_base.BaseAdmin object at 0x7f8c2e3c6b00>}}
+September 26, 2017 - 02:43:29
+Django version 1.11.2, using settings 'LuffyCRM.settings'
+Starting development server at http://10.143.117.27:9000/
+Quit the server with CONTROL-C.
+filter con {}
+view data {'paginator': <django.core.paginator.Paginator object at 0x7f8c2e05f320>, 'filter_conditions': {}, 'q_val': None, 'no_render': True, 'order_column': None, 'request': <WSGIRequest: GET '/crm/customer_list/'>, 'model_name': 'customer', 'new_order_key': None, 'page': None, 'last_orderby_key': '', 'admin_class': <crm.luffy_admin.CustomerAdmin object at 0x7f8c2e3c6be0>, 'app_name': 'crm', 'querysets': <Page 1 of 9>}
+filter option None
+filter option None
+filter option None
+OrderedDict([('name', <django.forms.fields.CharField object at 0x7f8c2e072a90>), ('qq', <django.forms.fields.CharField object at 0x7f8c2e072cf8>), ('weixin', <django.forms.fields.CharField object at 0x7f8c2e072ba8>), ('phone', <django.forms.fields.IntegerField object at 0x7f8c2e072780>), ('email', <django.forms.fields.EmailField object at 0x7f8c2e072828>), ('source', <django.forms.models.ModelChoiceField object at 0x7f8c2e37b940>), ('referral_from', <django.forms.models.ModelChoiceField object at 0x7f8c2e37b8d0>), ('consult_courses', <django.forms.models.ModelMultipleChoiceField object at 0x7f8c2e37b630>), ('content', <django.forms.fields.CharField object at 0x7f8c2e37b438>), ('status', <django.forms.fields.TypedChoiceField object at 0x7f8c2c208d68>), ('tags', <django.forms.models.ModelMultipleChoiceField object at 0x7f8c2c208eb8>), ('consultant', <django.forms.models.ModelChoiceField object at 0x7f8c2c208d30>)])
+System check identified some issues:
+
+WARNINGS:
+crm.Role.menus: (fields.W340) null has no effect on ManyToManyField.
+
+System check identified 1 issue (0 silenced).
+[26/Sep/2017 03:08:12] "GET /admin/crm/customer/ HTTP/1.1" 200 7489
+[26/Sep/2017 03:08:12] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[26/Sep/2017 03:08:26] "POST /admin/crm/customer/ HTTP/1.1" 200 3554
+[26/Sep/2017 03:08:26] "GET /static/admin/js/cancel.js HTTP/1.1" 200 204
+[26/Sep/2017 03:08:28] "POST /admin/crm/customer/ HTTP/1.1" 302 0
+[26/Sep/2017 03:08:29] "GET /admin/crm/customer/ HTTP/1.1" 200 7593
+[26/Sep/2017 03:08:29] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[26/Sep/2017 03:08:37] "POST /admin/crm/customer/ HTTP/1.1" 200 3554
+[26/Sep/2017 03:08:38] "POST /admin/crm/customer/ HTTP/1.1" 302 0
+[26/Sep/2017 03:08:39] "GET /admin/crm/customer/ HTTP/1.1" 200 7594
+[26/Sep/2017 03:08:39] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[26/Sep/2017 03:08:45] "POST /admin/crm/customer/ HTTP/1.1" 200 3795
+[26/Sep/2017 03:08:46] "POST /admin/crm/customer/ HTTP/1.1" 302 0
+[26/Sep/2017 03:08:47] "GET /admin/crm/customer/ HTTP/1.1" 200 7569
+[26/Sep/2017 03:08:47] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[26/Sep/2017 03:08:51] "POST /admin/crm/customer/ HTTP/1.1" 200 3640
+[26/Sep/2017 03:08:53] "POST /admin/crm/customer/ HTTP/1.1" 302 0
+[26/Sep/2017 03:08:53] "GET /admin/crm/customer/ HTTP/1.1" 200 7529
+[26/Sep/2017 03:08:53] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[26/Sep/2017 03:09:00] "GET /admin/crm/customer/add/ HTTP/1.1" 200 11375
+[26/Sep/2017 03:09:00] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[26/Sep/2017 03:09:00] "GET /static/admin/js/SelectBox.js HTTP/1.1" 200 5755
+[26/Sep/2017 03:09:00] "GET /static/admin/js/SelectFilter2.js HTTP/1.1" 200 12389
+[26/Sep/2017 03:09:00] "GET /static/admin/img/icon-unknown-alt.svg HTTP/1.1" 200 655
+[26/Sep/2017 03:09:00] "GET /static/admin/img/icon-unknown.svg HTTP/1.1" 200 655
+[26/Sep/2017 03:09:00] "GET /static/admin/img/selector-icons.svg HTTP/1.1" 200 3291
+[26/Sep/2017 03:09:09] "GET /admin/crm/source/add/?_to_field=id&_popup=1 HTTP/1.1" 200 2858
+[26/Sep/2017 03:09:09] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[26/Sep/2017 03:09:19] "POST /admin/crm/source/add/?_to_field=id&_popup=1 HTTP/1.1" 200 360
+[26/Sep/2017 03:09:19] "GET /static/admin/js/popup_response.js HTTP/1.1" 200 569
+[26/Sep/2017 03:10:12] "POST /admin/crm/customer/add/ HTTP/1.1" 200 11676
+[26/Sep/2017 03:10:12] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[26/Sep/2017 03:10:22] "POST /admin/crm/customer/add/ HTTP/1.1" 200 11695
+[26/Sep/2017 03:10:22] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+Internal Server Error: /admin/crm/customer/add/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/db/backends/utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python3.5/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.IntegrityError: crm_customer.consultant_id may not be NULL
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.5/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/usr/local/lib/python3.5/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python3.5/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python3.5/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/usr/local/lib/python3.5/site-packages/django/contrib/admin/options.py", line 1508, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/usr/local/lib/python3.5/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/usr/local/lib/python3.5/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python3.5/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/usr/local/lib/python3.5/site-packages/django/contrib/admin/options.py", line 1408, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/usr/local/lib/python3.5/site-packages/django/contrib/admin/options.py", line 1448, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/usr/local/lib/python3.5/site-packages/django/contrib/admin/options.py", line 979, in save_model
+    obj.save()
+  File "/usr/local/lib/python3.5/site-packages/django/db/models/base.py", line 806, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/usr/local/lib/python3.5/site-packages/django/db/models/base.py", line 836, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/usr/local/lib/python3.5/site-packages/django/db/models/base.py", line 922, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/usr/local/lib/python3.5/site-packages/django/db/models/base.py", line 961, in _do_insert
+    using=using, raw=raw)
+  File "/usr/local/lib/python3.5/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.5/site-packages/django/db/models/query.py", line 1063, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/usr/local/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 1099, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/lib/python3.5/site-packages/django/db/backends/utils.py", line 80, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/usr/local/lib/python3.5/site-packages/django/db/backends/utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python3.5/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/usr/local/lib/python3.5/site-packages/django/utils/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/local/lib/python3.5/site-packages/django/db/backends/utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python3.5/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.IntegrityError: crm_customer.consultant_id may not be NULL
+[26/Sep/2017 03:10:33] "POST /admin/crm/customer/add/ HTTP/1.1" 500 190612
+[26/Sep/2017 03:10:42] "GET /admin/crm/customer/add/ HTTP/1.1" 200 11411
+[26/Sep/2017 03:10:42] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[26/Sep/2017 03:10:45] "GET /admin/crm/customer/ HTTP/1.1" 200 7472
+[26/Sep/2017 03:10:45] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[26/Sep/2017 03:10:48] "GET /admin/crm/customer/?p=1 HTTP/1.1" 200 7537
+[26/Sep/2017 03:10:48] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[26/Sep/2017 03:10:49] "GET /admin/crm/customer/?p=2 HTTP/1.1" 200 7550
+[26/Sep/2017 03:10:49] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[26/Sep/2017 03:10:50] "GET /admin/crm/customer/?p=3 HTTP/1.1" 200 7534
+[26/Sep/2017 03:10:50] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[26/Sep/2017 03:10:51] "GET /admin/crm/customer/?p=4 HTTP/1.1" 200 7182
+[26/Sep/2017 03:10:51] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[26/Sep/2017 03:10:53] "GET /admin/crm/customer/3/change/?_changelist_filters=p%3D4 HTTP/1.1" 200 11754
+[26/Sep/2017 03:10:53] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[26/Sep/2017 03:11:02] "GET /admin/crm/customer/?p=4 HTTP/1.1" 200 7182
+[26/Sep/2017 03:12:19] "GET /admin/crm/customer/?p=2 HTTP/1.1" 200 7550
+[26/Sep/2017 03:12:19] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[26/Sep/2017 03:12:21] "GET /admin/crm/customer/?p=1 HTTP/1.1" 200 7537
+[26/Sep/2017 03:12:21] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[26/Sep/2017 03:12:24] "GET /admin/crm/customer/?p=0 HTTP/1.1" 200 7550
+[26/Sep/2017 03:12:24] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[26/Sep/2017 03:12:26] "GET /admin/crm/customer/?p=2 HTTP/1.1" 200 7550
+[26/Sep/2017 03:12:26] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[26/Sep/2017 03:12:27] "GET /admin/crm/customer/?p=3 HTTP/1.1" 200 7534
+[26/Sep/2017 03:12:27] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[26/Sep/2017 03:12:29] "GET /admin/crm/customer/?p=4 HTTP/1.1" 200 7182
+[26/Sep/2017 03:12:29] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[26/Sep/2017 03:12:31] "GET /admin/crm/customer/?p=2 HTTP/1.1" 200 7550
+[26/Sep/2017 03:12:31] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[26/Sep/2017 03:12:34] "GET /admin/crm/customer/?p=1 HTTP/1.1" 200 7537
+[26/Sep/2017 03:12:34] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[26/Sep/2017 03:13:28] "GET /crm/customer_list/ HTTP/1.1" 200 11966
+[26/Sep/2017 03:13:35] "GET /crm/customer_list/12/change/ HTTP/1.1" 200 16384
+Not Found: /crm/customer_list/add/
+[26/Sep/2017 03:13:45] "GET /crm/customer_list/add/ HTTP/1.1" 404 2970
+[26/Sep/2017 03:19:23] "GET /admin/crm/customer/10/change/?_changelist_filters=p%3D1 HTTP/1.1" 200 11751
+[26/Sep/2017 03:19:23] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[26/Sep/2017 03:59:08] "GET /admin/crm/customer/ HTTP/1.1" 200 7472
+[26/Sep/2017 03:59:08] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[26/Sep/2017 03:59:16] "GET /admin/crm/customer/?all= HTTP/1.1" 200 9811
+[26/Sep/2017 03:59:16] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+Not Found: /crm/need_followup
+[26/Sep/2017 10:22:08] "GET /crm/need_followup HTTP/1.1" 404 2955
+[26/Sep/2017 12:31:07] "GET /crm/customer_list/ HTTP/1.1" 200 11966

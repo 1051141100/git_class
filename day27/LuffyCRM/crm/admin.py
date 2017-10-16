@@ -89,7 +89,8 @@ admin.site.register(models.Account, AccountAdmin)
 #admin.site.unregister(Group)
 
 class CustomerAdmin(admin.ModelAdmin):
-    list_display = ('id','name','qq','source','consultant','status')
+    #list_display = ('id','name','qq','source','consultant','status')
+    list_display = ('id','name','source','consultant')
     list_filter = ('source','status','consultant')
     search_fields = ['qq','source__name']
     list_per_page = 2

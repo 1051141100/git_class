@@ -1,0 +1,52 @@
+System check identified some issues:
+
+WARNINGS:
+crm.Role.menus: (fields.W340) null has no effect on ManyToManyField.
+
+System check identified 1 issue (0 silenced).
+Invalid HTTP_HOST header: '10.143.117.27:9000'. You may need to add '10.143.117.27' to ALLOWED_HOSTS.
+[26/Sep/2017 02:09:23] "GET / HTTP/1.1" 400 61506
+Invalid HTTP_HOST header: '10.143.117.27:9000'. You may need to add '10.143.117.27' to ALLOWED_HOSTS.
+[26/Sep/2017 02:09:24] "GET /favicon.ico HTTP/1.1" 400 61588
+Performing system checks...
+
+------------crm luffyadmin.py
+------------teacher luffyadmin.py
+注册的admin list: {'crm': {'account': <luffyAdmin.admin_base.BaseAdmin object at 0x7fd31ea875c0>, 'customer': <crm.luffy_admin.CustomerAdmin object at 0x7fd31ea87518>, 'course': <crm.luffy_admin.CourseAdmin object at 0x7fd31ea87550>, 'classlist': <luffyAdmin.admin_base.BaseAdmin object at 0x7fd31ea87588>}, 'teacher': {'teachertest': <luffyAdmin.admin_base.BaseAdmin object at 0x7fd31ea87438>}}
+September 26, 2017 - 02:08:10
+Django version 1.11.2, using settings 'LuffyCRM.settings'
+Starting development server at http://10.143.117.27:9000/
+Quit the server with CONTROL-C.
+System check identified some issues:
+
+WARNINGS:
+crm.Role.menus: (fields.W340) null has no effect on ManyToManyField.
+
+System check identified 1 issue (0 silenced).
+[26/Sep/2017 02:10:09] "GET / HTTP/1.1" 302 0
+[26/Sep/2017 02:10:09] "GET /account/login/?next=/ HTTP/1.1" 200 2523
+[26/Sep/2017 02:10:09] "GET /static/css/ie10-viewport-bug-workaround.css HTTP/1.1" 200 433
+[26/Sep/2017 02:10:09] "GET /static/css/dashboard.css HTTP/1.1" 200 1557
+[26/Sep/2017 02:10:09] "GET /static/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 31000
+[26/Sep/2017 02:10:09] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 121200
+[26/Sep/2017 02:10:09] "GET /static/css/signin.css HTTP/1.1" 200 793
+[26/Sep/2017 02:10:09] "GET /static/js/jquery.min.js HTTP/1.1" 200 97163
+[26/Sep/2017 02:10:09] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 37045
+[26/Sep/2017 02:10:09] "GET /static/js/holder.min.js HTTP/1.1" 200 21934
+Not Found: /favicon.ico
+[26/Sep/2017 02:10:09] "GET /favicon.ico HTTP/1.1" 404 2647
+[26/Sep/2017 02:10:11] "POST /account/login/?next=/ HTTP/1.1" 200 2523
+[26/Sep/2017 02:10:19] "POST /account/login/?next=/ HTTP/1.1" 200 2523
+[26/Sep/2017 02:11:04] "POST /account/login/?next=/ HTTP/1.1" 302 0
+[26/Sep/2017 02:11:05] "GET / HTTP/1.1" 200 8076
+[26/Sep/2017 02:11:21] "GET /admin HTTP/1.1" 301 0
+[26/Sep/2017 02:11:21] "GET /admin/ HTTP/1.1" 200 1776
+[26/Sep/2017 02:11:21] "GET /static/admin/css/base.css HTTP/1.1" 200 16066
+[26/Sep/2017 02:11:21] "GET /static/admin/css/dashboard.css HTTP/1.1" 200 412
+[26/Sep/2017 02:11:21] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[26/Sep/2017 02:11:21] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 81348
+[26/Sep/2017 02:11:21] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 80304
+[26/Sep/2017 02:11:21] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 82564
+[26/Sep/2017 02:11:37] "GET /luffyadmin HTTP/1.1" 301 0
+[26/Sep/2017 02:11:37] "GET /luffyadmin/ HTTP/1.1" 200 217
+[26/Sep/2017 02:11:50] "GET /admin/ HTTP/1.1" 200 1776
